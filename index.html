@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Document</title>
+</head>
+<body
+<div class="bg">
+    <h1 id="title">Survey Form</h1>
+    <div class="box">
+        <p id="description" style="text-align: center;padding-top: 20px;">Survey Form by Aayushi</p>
+        <form id="survey-form">
+            <div class="component">                                        <!--1 -->
+                <div id="name-label" class="labels">*Name:</div>
+                <div class="inputfield">
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+            </div>
+            <div class="component">                                        <!--2 -->
+                <div id="email-label" class="labels">*Email:</div>
+                <div class="inputfield">
+                    <input type="email" id="email" placeholder="Enter your email"  required>
+                </div>
+            </div>
+            <div class="component">                                        <!--3 -->
+                <div id="number-label" class="labels">*Age:</div>
+                <div class="inputfield">
+                    <input type="number" id="number" placeholder="Age"  required>
+                </div>
+            </div>
+            <div class="component">                                        <!--4 -->
+                <div id="option-label" class="labels">
+                        Which option best describes your current role?
+                </div>
+                <div class="inputfield">
+                    <select id="dropdown">
+                        <option value="student">Student</option>
+                        <option value="fulltimejob">Full time job</option>
+                        <option value="fulltimelearner">Full time learner</option>
+                        <option value="not">Prefer not to say</option>
+                        <option value="other">Other</option>
+                      </select>
+                </div>
+            </div>
+            <div class="component">                                        <!--5 -->
+                <div id="radio-label" class="labels">
+                        <label for="userRating">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                </div>
+                <div class="inputfield">
+                    <input type="radio" name="decision" value="" required> Definitely<br>
+                    <input type="radio" name="decision" value=""> Maybe<br>
+                    <input type="radio" name="decision" value=""> Not Sure 
+                </div>
+            </div>
+            <div class="component">                                        <!--6 -->
+                <div id="like-label" class="labels">
+                        <label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+                </div>
+                <div class="inputfield">
+                    <input type="checkbox" name="better" value=""> Front-end Projects<br>
+                    <input type="checkbox" name="better" value=""> Back-end Projects<br>
+                    <input type="checkbox" name="better" value=""> Data Visualization<br>
+                    <input type="checkbox" name="better" value="" >Challenges<br>
+                    <input type="checkbox" name="better" value=""> Open Source Community<br>
+                    <input type="checkbox" name="better" value="">Gitter help rooms<br>
+                    <input type="checkbox" name="better" value=""> Videos<br>
+                    <input type="checkbox" name="better" value="">  City Meetups<br>
+                    <input type="checkbox" name="better" value="" >Wiki<br>
+                    <input type="checkbox" name="better" value=""> Forum<br>
+                    <input type="checkbox" name="better" value="">Additional Courses<br>    
+                </div>
+            </div>
+            <div class="component">                                        <!--7-->
+                <div id="suggestion-label" class="labels">Any Comments or Suggestions?</div>
+                <div class="inputfield">
+                        <textarea rows="3" cols="30" placeholder="Enter your comment here...." ></textarea>
+                </div>
+            </div>
+            <div>
+                <input style=" margin-left:400px;" type="submit" value="Submit" >
+            </div>
+            <br>
+        </form>
+    </div>
+</div>
+</body>
+</html>
